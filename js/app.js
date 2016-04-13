@@ -18,10 +18,18 @@ function BookController($scope) {
 	};
 
 	$scope.addBook = function(book) {
-		book.id = maxId() + 1;
-		$scope.books.push(book);
-		resetModel("book");
+		if (validate(book)) {
+			book.id = maxId() + 1;
+			$scope.books.push(book);
+			resetModel("book");
+		}
 	};
+
+	validate = function(book) {
+		if (!book.title) {
+			return false;
+		}
+	}
 
 	resetModel = function(modelName) {
 		eval("$scope." + modelName + "={}");
