@@ -1,0 +1,38 @@
+.row-even {
+	color: red;
+}
+
+.row-odd {
+	color: blue;
+}
+
+.tarasteca-panel {
+	float: left;
+	width: 250px;
+	height: 300px;
+	margin: 10px;	
+}
+
+.tarasteca-input {
+	margin: 10px;
+}
+
+.tarasteca-flow-right {
+	float: right;
+	width: 20px;
+	height: 20px;
+	text-align: center;
+	color: #a94442;;
+	background-color: #ebccd1;; 
+}
+
+.tt-form-control {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.tt-push-down {
+	position: relative;
+	top: 0px;
+	right: 0px;
+}
