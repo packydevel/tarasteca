@@ -1,5 +1,14 @@
-angular.module('TarasTeca', [])
-  .controller('BookController', ['$scope', BookController]);
+// angular.module('TarasTeca', ['ngRoute']).controller('BookController', ['$scope', BookController]);
+
+var app = angular.module('TarasTeca', ['ngRoute']);
+
+app.config(function($rootProvider) {
+	$rootProvider
+		.when("/", { redirectTo: "/book-list" })
+		.when("/book-list", { controller: "BookController", templateUrl: "../views/book-list.html" })
+		.when("/404", { controller: "404Controller", templateUrl: "../views/404.html" })
+		.otherwise({ redirectTo: "/404" });
+});
 
 function BookController($scope) {
 	$scope.book = {};
