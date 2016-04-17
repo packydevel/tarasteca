@@ -10,7 +10,17 @@
 	float: left;
 	width: 250px;
 	height: 300px;
-	margin: 10px;	
+	margin: 10px;
+}
+
+.tarasteca-panel-heading {
+	position: relative;
+	height: 40px;
+}
+
+.tarasteca-panel-body {
+	position: relative;
+	height: 260px;
 }
 
 .tarasteca-input {
@@ -32,7 +42,7 @@
 }
 
 .tt-push-down {
-	position: relative;
-	top: 0px;
-	right: 0px;
+	position: absolute;
+	right: 15px;
+	bottom: 15px;
 }
